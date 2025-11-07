@@ -49,7 +49,7 @@ const Todo = () => {
 	const deleteTask = (taskId) => {
 		setTasks(tasks.filter((task) => task.id !== taskId));
 	};
-	/*  */
+	
 	const taskChange = (taskId, isDone) => {
 		setTasks(
 			tasks.map((task) => {
