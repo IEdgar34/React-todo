@@ -1,7 +1,7 @@
 import Filed from "./filed";
 
 const SerchTaskForm = (props) => {
-	const { onSerchInput } = props;
+	const { serchValue, setSerchValue } = props;
 	return (
 		<form className="todo__form">
 			<Filed
@@ -9,7 +9,8 @@ const SerchTaskForm = (props) => {
 				label="Search task"
 				id="search-task"
 				type="search"
-				onInput={({ target }) => onSerchInput(target.value)}
+				value={serchValue}
+				onInput={({ target }) => setSerchValue(target.value)}
 			/>
 		</form>
 	);

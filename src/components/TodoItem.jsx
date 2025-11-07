@@ -1,5 +1,7 @@
 const TodoItem = (props) => {
 	const {
+		ref,
+	
 		className = "",
 		id,
 		label,
@@ -8,7 +10,7 @@ const TodoItem = (props) => {
 		onTaskChange,
 	} = props;
 	return (
-		<li className={`todo-item  ${className}`}>
+		<li className={`todo-item  ${className}`}ref={ref}>
 			<input
 				className="todo-item__checkbox"
 				id={id}
